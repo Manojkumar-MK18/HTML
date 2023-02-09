@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DropEffect Js</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+    <style>
+        .section {
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+                sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <h1>Section1</h1>
+        </div>
+        <div class="section">
+            <div class="slide">slides1</div>
+            <div class="slide">slides2</div>
+            <div class="slide">slides3</div>
+        </div>
+        <div class="section">
+            <h1>Section3</h1>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.extensions.min.js"></script>
+    <script>
+        new fullpage("#fullpage", {
+            sectionsColor: ["#ff5f45", "#0798ec", "#fec401"],
+            dropEffect: true, dropEffectOptions: { speed: 2300, color: '#F82F4D', zIndex: 9999 },
+        });
+    </script>
+</body>
+
+</html>

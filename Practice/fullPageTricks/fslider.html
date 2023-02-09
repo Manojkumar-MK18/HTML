@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slider Js</title> 
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+    <style>
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+            color: wheat;
+            font-size: 20px;
+        }
+
+        .s1 {
+            background: url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg?w=360");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .s2 {
+            background: url("https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .s3 {
+            background: url("https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section s1">
+            <div class="slide">
+                <h1>first slide</h1>
+            </div>
+            <div class="slide">
+                <h1>second slide</h1>
+            </div>
+            <div class="slide">
+                <h1>third slide</h1>
+            </div>
+        </div>
+        <div class="section s2">
+            <h1>Second section</h1>
+        </div>
+        <div class="section s3">
+            <h1>Third section</h1>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.extensions.min.js"></script>
+    <script>
+        new fullpage("#fullpage", {
+            autoscrolling: true,
+            navigation: true,
+            scrollHorizontally: true,
+            anchors: ["section1", "section2", "section3"],
+            scrollingSpeed: 1000,
+            controlArrows: false,
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom', verticalCentered: true,
+        });
+    </script>
+</body>
+
+</html>
